@@ -1,159 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoshi Market | フィギュア・ぬいぐるみ・コレクション通販</title>
-    <meta
-      name="description"
-      content="人気フィギュア・ぬいぐるみ・限定コレクティブルを全国へお届け。新作やランキング、再入荷情報を毎日更新。"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <div class="container topbar">
-        <a class="logo" href="#top">Hoshi Market</a>
-        <form class="search-form" role="search">
-          <input type="search" placeholder="商品名・作品名で検索" aria-label="商品検索" />
-          <button type="submit">検索</button>
-        </form>
-        <button class="cart-btn" aria-label="カートを見る">🛒<span>カート</span></button>
-      </div>
-      <div class="nav-wrap">
-        <div class="container nav-inner">
-          <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">☰</button>
-          <nav class="main-nav" id="mainNav">
-            <a href="#top">Home</a>
-            <a href="#categories">Categories</a>
-            <a href="#new">New</a>
-            <a href="#ranking">Ranking</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-slider" id="heroSlider">
-          <article class="slide active" style="background-image: linear-gradient(120deg, rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0.35)), url('./images/hero-1.svg');">
-            <div class="container hero-content">
-              <p class="hero-tag">新作入荷</p>
-              <h1>推しと暮らす、毎日にときめきを。</h1>
-              <p>人気シリーズのフィギュア・ぬいぐるみを厳選。限定アイテムも続々登場。</p>
-              <a class="btn cta" href="#products">今すぐチェック</a>
-            </div>
-          </article>
-          <article class="slide" style="background-image: linear-gradient(120deg, rgba(255, 102, 0, 0.72), rgba(0, 0, 0, 0.35)), url('./images/hero-2.svg');">
-            <div class="container hero-content">
-              <p class="hero-tag">限定コレクション</p>
-              <h2>週末限定セール 最大20%OFF</h2>
-              <p>在庫限りのスペシャルプライス。お目当ての商品はお早めに。</p>
-              <a class="btn cta" href="#ranking">ランキングを見る</a>
-            </div>
-          </article>
-          <article class="slide" style="background-image: linear-gradient(120deg, rgba(0, 123, 255, 0.65), rgba(0, 0, 0, 0.45)), url('./images/hero-3.svg');">
-            <div class="container hero-content">
-              <p class="hero-tag">送料無料キャンペーン</p>
-              <h2>5,000円以上で全国送料無料</h2>
-              <p>平日15時までのご注文で即日発送。安心の正規品保証付きです。</p>
-              <a class="btn cta" href="#trust">安心ポイントへ</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section container reveal" id="categories">
-        <h2>カテゴリー</h2>
-        <div class="category-grid">
-          <a href="#products" class="category-card">🎎<span>スケールフィギュア</span></a>
-          <a href="#products" class="category-card">🧸<span>ぬいぐるみ</span></a>
-          <a href="#products" class="category-card">🧍<span>可動フィギュア</span></a>
-          <a href="#products" class="category-card">🎁<span>限定BOX</span></a>
-          <a href="#products" class="category-card">🔑<span>キーホルダー</span></a>
-          <a href="#products" class="category-card">🎨<span>アクリルスタンド</span></a>
-          <a href="#products" class="category-card">📚<span>公式グッズ</span></a>
-          <a href="#products" class="category-card">⭐<span>予約商品</span></a>
-        </div>
-      </section>
-
-      <section class="section container reveal" id="products">
-        <div class="section-head">
-          <h2>おすすめ商品</h2>
-          <a href="#" class="text-link">もっと見る</a>
-        </div>
-        <div class="product-grid">
-          <article class="product-card"><img src="./images/product-1.svg" alt="月詠ミナ 1/7 スケールフィギュア"/><h3>月詠ミナ 1/7 スケールフィギュア</h3><p class="price">¥14,800</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-2.svg" alt="ちびドラ もちもちぬいぐるみ"/><h3>ちびドラ もちもちぬいぐるみ</h3><p class="price">¥3,980</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-3.svg" alt="蒼天レン 可動アクションモデル"/><h3>蒼天レン 可動アクションモデル</h3><p class="price">¥8,400</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-4.svg" alt="星巡り学園 限定コレクターズBOX"/><h3>星巡り学園 限定コレクターズBOX</h3><p class="price">¥12,500</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-5.svg" alt="ネオ侍シリーズ ミニフィギュアセット"/><h3>ネオ侍シリーズ ミニフィギュアセット</h3><p class="price">¥6,200</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-6.svg" alt="ふわもこユニ ぬいぐるみL"/><h3>ふわもこユニ ぬいぐるみL</h3><p class="price">¥5,600</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-7.svg" alt="アストラ隊 アクリルスタンド第2弾"/><h3>アストラ隊 アクリルスタンド第2弾</h3><p class="price">¥1,650</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-8.svg" alt="幻影騎士団 メタルキーホルダー"/><h3>幻影騎士団 メタルキーホルダー</h3><p class="price">¥1,200</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-9.svg" alt="神楽サラ 1/8 プレミアムフィギュア"/><h3>神楽サラ 1/8 プレミアムフィギュア</h3><p class="price">¥16,900</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-10.svg" alt="ピコパルズ おすわりぬいセット"/><h3>ピコパルズ おすわりぬいセット</h3><p class="price">¥4,250</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-11.svg" alt="夜明けの魔導書 公式グッズパック"/><h3>夜明けの魔導書 公式グッズパック</h3><p class="price">¥7,500</p><button>カートに追加</button></article>
-          <article class="product-card"><img src="./images/product-12.svg" alt="流星バンド メモリアルフィギュア"/><h3>流星バンド メモリアルフィギュア</h3><p class="price">¥9,980</p><button>カートに追加</button></article>
-        </div>
-      </section>
-
-      <section class="section container reveal" id="ranking">
-        <h2>週間ランキング TOP5</h2>
-        <ol class="ranking-list">
-          <li class="rank first"><span class="badge">1</span><strong>神楽サラ 1/8 プレミアムフィギュア</strong><em>¥16,900</em></li>
-          <li><span class="badge">2</span><strong>月詠ミナ 1/7 スケールフィギュア</strong><em>¥14,800</em></li>
-          <li><span class="badge">3</span><strong>星巡り学園 限定コレクターズBOX</strong><em>¥12,500</em></li>
-          <li><span class="badge">4</span><strong>蒼天レン 可動アクションモデル</strong><em>¥8,400</em></li>
-          <li><span class="badge">5</span><strong>ふわもこユニ ぬいぐるみL</strong><em>¥5,600</em></li>
-        </ol>
-      </section>
-
-      <section class="section container reveal" id="new">
-        <h2>新着アイテム</h2>
-        <div class="new-slider" id="newSlider">
-          <article class="new-item"><img src="./images/new-1.svg" alt="限定アクスタ"/><p>限定アクスタ「桜夜」</p></article>
-          <article class="new-item"><img src="./images/new-2.svg" alt="クッション"/><p>まるっとクッション「ピコ」</p></article>
-          <article class="new-item"><img src="./images/new-3.svg" alt="トレカケース"/><p>メタル調トレカケース</p></article>
-          <article class="new-item"><img src="./images/new-4.svg" alt="小物入れ"/><p>コレクション小物ボックス</p></article>
-        </div>
-      </section>
-
-      <section class="section trust reveal" id="trust">
-        <div class="container trust-grid">
-          <article>🚚<h3>送料無料</h3><p>5,000円以上のお買い上げで全国送料無料。</p></article>
-          <article>⚡<h3>即日発送</h3><p>平日15時までのご注文は当日出荷。</p></article>
-          <article>✅<h3>正規品保証</h3><p>公式ルート仕入れのみを取り扱っています。</p></article>
-          <article>💬<h3>安心サポート</h3><p>ご購入前後のご相談を日本語で丁寧に対応。</p></article>
-        </div>
-      </section>
-
-      <section class="section container reveal" id="news">
-        <h2>お知らせ</h2>
-        <ul class="news-list">
-          <li><time datetime="2026-05-03">2026.05.03</time> ゴールデンウィーク期間の配送スケジュールを更新しました。</li>
-          <li><time datetime="2026-04-25">2026.04.25</time> 「神楽サラ 1/8 プレミアムフィギュア」再入荷予約を開始しました。</li>
-          <li><time datetime="2026-04-18">2026.04.18</time> 新規会員登録で500円OFFクーポン配布中です。</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="site-footer" id="contact">
-      <div class="container footer-grid">
-        <div>
-          <h3>Hoshi Market</h3>
-          <p>〒150-0001 東京都渋谷区神宮前1-2-3 ダミービル5F</p>
-          <p>TEL: 03-1234-5678 / 営業時間: 10:00〜18:00</p>
-        </div>
-        <nav>
-          <a href="#">利用規約</a>
-          <a href="#">プライバシーポリシー</a>
-          <a href="#">お問い合わせ</a>
-        </nav>
-      </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社KAKO | ECで買う喜びを届ける</title>
+  <meta name="description" content="株式会社KAKOは、ECモールを主体としたオンライン販売を軸に、物販事業・コンサルティング事業・営業事業を展開しています。お客様に安心と満足の購買体験を提供します。">
+  <meta property="og:title" content="株式会社KAKO | ECで買う喜びを届ける">
+  <meta property="og:description" content="株式会社KAKOは、ECモールを主体としたオンライン販売を軸に、物販事業・コンサルティング事業・営業事業を展開しています。お客様に安心と満足の購買体験を提供します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kako-ec.jp/">
+  <meta property="og:image" content="https://kako-ec.jp/assets/img/ogp.svg">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top"><img src="assets/img/logo.svg" alt="株式会社KAKO ロゴ"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開閉">☰</button>
+    <nav id="global-nav" class="nav" aria-label="グローバルナビゲーション">
+      <a href="#mission">ミッション</a><a href="#about">私たちについて</a><a href="#business">事業内容</a><a href="#company">会社概要</a><a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="container hero-grid"><div><h1>ECで、買う喜びをもっと身近に。</h1><p>オンライン販売の可能性を最大化し、お客様に安心と満足のある購買体験を届けます。</p><div class="cta"><a class="btn" href="#business">事業内容を見る</a><a class="btn btn-outline" href="#contact">お問い合わせ</a></div></div><img src="assets/img/hero-ec.svg" alt="ECサイトと配送をイメージしたイラスト"></div></section>
+<section id="mission" class="section"><div class="container"><p class="eyebrow">Our Mission</p><h2>私たちが目指すこと</h2><p>オンラインでの買い物が日常になった今、消費者が安心して商品を選び、満足して購入できる環境づくりがますます重要になっています。株式会社KAKOは、ECモールを中心とした販売活動を通じて、価格・品揃え・品質・アフターサービスのすべてにこだわり、お客様に信頼される購買体験を提供します。</p></div></section>
+<section id="about" class="section alt"><div class="container two-col"><img src="assets/img/about.svg" alt="ECを通じたつながりとサポートのイラスト"><div><p class="eyebrow">About Us</p><h2>お客様とのつながりを第一に</h2><p>私たちは、商品を届けるだけでなく、購入前から購入後までの体験全体を大切にしています。一つひとつの商品と丁寧に向き合い、ECを通じてお客様の暮らしやビジネスに価値を届けることを目指しています。</p></div></div></section>
+<section id="business" class="section"><div class="container"><p class="eyebrow">Business</p><h2>事業内容</h2><div class="cards"><article class="card"><img src="assets/img/business-sales.svg" alt="物販事業のイメージ"><h3>物販事業</h3><p>日本国内の主要ECモールを中心に、幅広い商品の販売を行っています。品揃え、価格、配送、アフターサービスまで一貫してこだわり、お客様に安心してご購入いただける運営を心がけています。</p></article><article class="card"><img src="assets/img/business-consulting.svg" alt="コンサルティング事業のイメージ"><h3>コンサルティング事業</h3><p>ECサイトの立ち上げや運営改善、販売戦略の設計など、オンライン販売に関する課題解決をサポートします。販売者がより良いサービスを提供できるよう、実務に基づいた提案を行います。</p></article><article class="card"><img src="assets/img/business-operation.svg" alt="営業事業のイメージ"><h3>営業事業</h3><p>お客様に喜ばれる商品を安定的に提供するため、仕入れ先や取引先との関係構築に取り組んでいます。多様なジャンルの商品を取り扱える体制づくりを進めています。</p></article></div></div></section>
+<section class="section alt"><div class="container"><p class="eyebrow">Strength</p><h2>KAKOの強み</h2><ul class="strengths"><li><h3>顧客目線のEC運営</h3><p>購買導線やレビュー対応などを含め、お客様が安心して選べる仕組みを重視しています。</p></li><li><h3>主要ECモールでの販売経験</h3><p>モール特性を理解した商品展開と運用で安定した販売活動を行います。</p></li><li><h3>購入後まで意識したサポート</h3><p>お問い合わせやアフター対応を丁寧に行い、信頼の継続につなげます。</p></li><li><h3>継続的な商品開拓と改善</h3><p>市場動向に合わせた商品選定と運営改善を積み重ねています。</p></li></ul></div></section>
+<section class="section"><div class="container"><p class="eyebrow">News</p><h2>お知らせ</h2><ul class="news"><li><time datetime="2026-05-13">2026年5月13日</time> ホームページを公開しました</li><li><time datetime="2026-04-01">2026年4月1日</time> EC販売支援サービスのご相談を受け付けています</li><li><time datetime="2026-03-15">2026年3月15日</time> 取扱商品の拡充に取り組んでいます</li></ul></div></section>
+<section id="company" class="section alt"><div class="container"><p class="eyebrow">Company</p><h2>会社概要</h2><table class="company-table"><tr><th>社名</th><td>株式会社KAKO</td></tr><tr><th>設立</th><td>2020年9月9日</td></tr><tr><th>住所</th><td>〒919-0227 福井県南条郡南越前町脇本12-59<br><a href="https://maps.google.com/?q=%E7%A6%8F%E4%BA%95%E7%9C%8C%E5%8D%97%E6%9D%A1%E9%83%A1%E5%8D%97%E8%B6%8A%E5%89%8D%E7%94%BA%E8%84%87%E6%9C%AC12-59" target="_blank" rel="noopener">Googleマップで見る</a></td></tr><tr><th>資本金</th><td>1,000万円</td></tr><tr><th>代表者</th><td>代表取締役 越井 功</td></tr><tr><th>事業内容</th><td>ECモールを主体としたオンライン販売を軸とした物販業務</td></tr></table></div></section>
+<section id="contact" class="section"><div class="container"><h2>お問い合わせ</h2><form id="contact-form" action="contact.php" method="post" novalidate><div class="honeypot" aria-hidden="true"><label>Webサイト<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><label>お名前*<input type="text" name="name" required></label><label>会社名<input type="text" name="company"></label><label>メールアドレス*<input type="email" name="email" required></label><label>電話番号<input type="tel" name="phone"></label><label>お問い合わせ種別*<select name="type" required><option value="">選択してください</option><option>物販事業について</option><option>コンサルティングについて</option><option>営業について</option><option>その他</option></select></label><label>お問い合わせ内容*<textarea name="message" required></textarea></label><label class="consent"><input type="checkbox" name="consent" required> 個人情報の取り扱いに同意します（<a href="privacy.html">プライバシーポリシー</a>）</label><button class="btn" type="submit">送信する</button><p class="form-note" id="form-message" aria-live="polite"></p></form></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><p>株式会社KAKO<br>〒919-0227<br>福井県南条郡南越前町脇本12-59</p></div><nav aria-label="フッターナビ"><a href="#mission">ミッション</a><a href="#about">私たちについて</a><a href="#business">事業内容</a><a href="#company">会社概要</a><a href="#contact">お問い合わせ</a><a href="privacy.html">プライバシーポリシー</a></nav></div><p class="copyright">© 2026 株式会社KAKO All Rights Reserved.</p></footer>
+<button class="to-top" aria-label="ページトップへ戻る">↑</button>
+<script src="assets/js/main.js"></script>
+</body></html>
