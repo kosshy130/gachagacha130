@@ -1,47 +1,48 @@
-# Hoshi Market（GitHub Pages対応）
+# 永宮建築板金 コーポレートサイト
 
-フィギュア・ぬいぐるみ・コレクティブル向けの、日本語ECサイト用静的テンプレートです。  
-`index.html` をルートに置く構成で、GitHub Pagesへそのまま公開できます。
+福井県南越前町の建築板金会社「永宮建築板金」向けに作成した、静的HTML/CSS/JS構成の企業ホームページです。  
+屋根工事・外壁工事・雨樋工事を中心とした事業内容を、写真を活かした落ち着いたデザインで紹介しています。
+
+## サイト概要
+
+- 職人らしい信頼感と清潔感を意識したデザイン（白・黒・グレー・濃紺）
+- 1ページ完結の構成
+- スマホ対応（レスポンシブ）
+- お問い合わせフォーム（仮）付き
+- Googleマップ埋め込み用エリアあり
+- Xサーバーの `public_html` へ直接アップロード可能
 
 ## ファイル構成
 
-```
-/project-root
+```text
+/
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-│   └── *.svg（ダミー画像）
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── img/
+│       └── （画像ファイル一式）
 └── README.md
 ```
 
-## GitHub Pages 公開手順
+## Xサーバーへのアップロード方法
 
-1. GitHubで新しいリポジトリを作成します（例: `hoshi-market`）。
-2. このプロジェクトファイル一式をリポジトリへアップロードします。  
-   （`index.html` がルートにあることを確認）
-3. GitHubで対象リポジトリを開き、**Settings** をクリックします。
-4. 左メニューの **Pages** を開きます。
-5. **Build and deployment** で以下を設定します。
-   - Source: `Deploy from a branch`
-   - Branch: `main` / `/ (root)`
-6. **Save** をクリックします。
-7. 数分後、以下URL形式で公開サイトへアクセスできます。
+1. Xサーバーのサーバーパネルへログイン
+2. **ファイルマネージャ** を開く
+3. 対象ドメインの `public_html` ディレクトリに移動
+4. 本プロジェクトの以下をまとめてアップロード
+   - `index.html`
+   - `assets/` フォルダ
+5. ブラウザで対象ドメインにアクセスし、表示確認
 
-```
-https://username.github.io/repository-name/
-```
+> すべて相対パスで記述しているため、`public_html` 直下に配置すればそのまま表示できます。
 
-例:
+## 更新方法
 
-```
-https://yourname.github.io/hoshi-market/
-```
+1. ローカルで `index.html` / `assets/css/style.css` / `assets/js/main.js` を編集
+2. GitHubへコミット・プッシュして履歴管理
+3. 更新したファイルをXサーバー `public_html` に上書きアップロード
+4. ブラウザキャッシュをクリアして表示を確認
 
-## カスタマイズポイント
-
-- `css/style.css` の `--accent` でテーマカラー変更
-- `index.html` の商品カードを書き換えるだけで商品差し替え可能
-- `js/script.js` でヒーロースライダー速度（`4500`ms）調整可能
